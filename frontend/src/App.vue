@@ -1,42 +1,19 @@
-<script setup>
-</script>
-
 <template>
   <header class="bg-red-400 text-white">
     <div class="wrapper">
-      HelloWorld!
+      <router-link to="/">Home</router-link>
+
+      <router-link to="/books/create">Create Books</router-link>
+
+      <router-link to="/books/delete">Delete Books</router-link>
+
+      <router-link to="/books/edit">Edit Books</router-link>
+
+      <router-link to="/books/show">Show Books</router-link>
     </div>
   </header>
 
-  <main>
-  </main>
+  <div class="md:container md:mx-auto">
+    <router-view></router-view>
+  </div>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
