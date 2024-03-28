@@ -15,9 +15,9 @@ const routes = [
   { path: "/", name: "Home", component: Home },
   // { path: "/home", name: "Home", redirect: "/" }, // isn't working, look later
   { path: "/books/create", name: "CreateBooks", component: CreateBooks },
-  { path: "/books/delete", name: "DeleteBooks", component: DeleteBooks },
-  { path: "/books/edit", name: "EditBooks", component: EditBooks },
-  { path: "/books/show", name: "ShowBooks", component: ShowBooks },
+  { path: "/books/delete/:id", name: "DeleteBooks", component: DeleteBooks },
+  { path: "/books/edit/:id", name: "EditBooks", component: EditBooks },
+  { path: "/books/details/:id", name: "ShowBooks", component: ShowBooks },
   // { path: "/about", name: "About", component: About },
 ];
 
