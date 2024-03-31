@@ -17,7 +17,12 @@ const routes = [
   { path: "/books/create", name: "CreateBooks", component: CreateBooks },
   { path: "/books/delete/:id", name: "DeleteBooks", component: DeleteBooks },
   { path: "/books/edit/:id", name: "EditBooks", component: EditBooks },
-  { path: "/books/details/:id", name: "ShowBooks", component: ShowBooks },
+  {
+    path: "/books/details/:id",
+    name: "ShowBooks",
+    component: ShowBooks,
+    props: true,
+  },
   // { path: "/about", name: "About", component: About },
 ];
 
