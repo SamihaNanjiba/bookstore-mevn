@@ -25,7 +25,7 @@ const handleSaveBook = async () => {
     }
   } catch (error) {
     loading.value = false;
-    alert("An error occured. Couldn't save data. " + error);
+    alert("An error occured. Couldn't save data. Please check console" + error);
     console.log(error.response.data);
   } finally {
     loading.value = false;
