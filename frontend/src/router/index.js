@@ -15,7 +15,12 @@ const routes = [
   { path: "/", name: "Home", component: Home },
   // { path: "/home", name: "Home", redirect: "/" }, // isn't working, look later
   { path: "/books/create", name: "CreateBooks", component: CreateBooks },
-  { path: "/books/delete/:id", name: "DeleteBooks", component: DeleteBooks },
+  { 
+    path: "/books/delete/:id", 
+    name: "DeleteBooks", 
+    component: DeleteBooks, 
+    props: true, 
+  },
   { 
     path: "/books/edit/:id",
     name: "EditBooks",
