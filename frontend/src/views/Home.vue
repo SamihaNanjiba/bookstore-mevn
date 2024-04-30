@@ -13,7 +13,8 @@ const loading = ref(false);
 watchEffect(async () => {
   loading.value = true;
   try {
-    const response = await axios.get("http://localhost:5555/books");
+    // const response = await axios.get("http://localhost:5555/books");
+    const response = await axios.get(`https://bookstore-mevn.onrender.com/books`);
     books.value.push(...response.data.data);
   } catch (error) {
     books.value = "Error! Could not reach the API. " + error;
